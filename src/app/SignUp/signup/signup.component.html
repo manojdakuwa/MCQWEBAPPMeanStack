@@ -1,0 +1,19 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Sign In </h2>
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="/assets/icons8-user-64.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form [formGroup]="form">
+        <input type="text" id="name" class="fadeIn second" name="name" formControlName="name" placeholder="user name">
+        <input type="text" id="Email" class="fadeIn third" name="Email" formControlName="email" placeholder="email">
+        <input type="submit" class="fadeIn fourth" (click)="Login()" value="Log In">
+      </form>
+  
+    </div>
+  </div>
